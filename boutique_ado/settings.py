@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import os
 
 # Import environment variables
-from .env import STRIPE_PUBLIC_KEY, STRIPE_SECRET_KEY
+from .env import STRIPE_PUBLIC_KEY, STRIPE_SECRET_KEY, STRIPE_WH_SECRET
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -178,6 +178,8 @@ STRIPE_CURRENCY = 'usd'
 # Use environment variables
 STRIPE_PUBLIC_KEY = STRIPE_PUBLIC_KEY
 STRIPE_SECRET_KEY = STRIPE_SECRET_KEY
+STRIPE_WH_SECRET = STRIPE_WH_SECRET
+
 
 # Default auto field for models
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
